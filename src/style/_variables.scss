@@ -1,0 +1,62 @@
+$colors: (
+	'red': #FE5269,
+	'green': #02BD85,
+    'white': #FFFFFF,
+    'grey-0': #303133,
+    'grey-1': #606266,
+    'grey-2': #909399,
+    'grey-3': #BCBEC2,
+    'grey-4': #F4F5F6,
+    'blue': #1988F4
+);
+
+$font-sizes: (
+	xs: 10,					// 10px
+	xss: 11,				// 11px
+    sm: 12,   				// 12px
+    md: 13,					// 13px
+    lg: 14,					// 14px
+    xl: 16, 				// 16px
+	xxl: 24,                // 24px
+);
+
+$base-font-size: 1px;
+
+$flex-jc: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+);
+
+$flex-ai: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+);
+
+$spacing-base-size: 1px;
+
+$spacing-types: (
+    m: margin,
+    p: padding,
+);
+
+$spacing-directions: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left,
+);
+
+$spacing-sizes: (
+    0: 2,			// 2px
+    1: 4,			// 4px
+    2: 5,			// 5px
+    3: 8,			// 8px
+    4: 12, 			
+    5: 16,
+    6: 15
+);
