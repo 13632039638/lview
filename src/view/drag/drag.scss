@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    background: #F4F5F6;
+}
+.head {
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+}
+.drag {
+    &-main {
+        height: 65px;
+        line-height: 65px;
+        border-bottom: 1px solid #BCBEC2;
+        .w5 {
+            width: 50px;
+            height: 65px;
+        }
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .default {
+        height: 0;
+        transition: all .2s;
+        overflow: hidden;
+    }
+}

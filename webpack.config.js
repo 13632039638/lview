@@ -12,6 +12,7 @@ const config = {
     mode: 'development', //production
     entry: {
         index: path.resolve(__dirname, './src/js/index.js'),
+        drag: path.resolve(__dirname, './src/js/drag.js')
     },
     output: {
         path: path.resolve(__dirname + '/dist'),
@@ -105,6 +106,19 @@ const config = {
             title: '折叠面板',
             chunksSortMode: 'manual',
             chunks: ['index'],
+            excludeChunks: ['node_modules'],
+            hash: true
+        }),
+        new htmlWebpackPlugin({
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            },
+            filename: 'drag.html',
+            template: path.resolve(__dirname, 'src/drag.html'),
+            title: '拖拽列表',
+            chunksSortMode: 'manual',
+            chunks: ['drag'],
             excludeChunks: ['node_modules'],
             hash: true
         }),
